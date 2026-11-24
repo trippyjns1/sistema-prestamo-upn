@@ -32,7 +32,8 @@ def opcion_buscar_libro(sistema):
     print("\n-- Buscar Libro --")
     print(" 1. Por código")
     print(" 2. Por título")
-    tipo = leer_entero("Elija: ", 1, 2)
+    print(" 3. Por autor")
+    tipo = leer_entero("Elija: ", 1, 3)
     if tipo == 1:
         libro = sistema.buscar_libro(leer_codigo("Código del libro: "))
         if libro is None:
@@ -40,7 +41,10 @@ def opcion_buscar_libro(sistema):
         else:
             libro.mostrar()
     else:
-        encontrados = sistema.buscar_por_titulo(leer_texto("Texto a buscar en el título: "))
+        if tipo == 2:
+            encontrados = sistema.buscar_por_titulo(leer_texto("Texto a buscar en el título: "))
+        else:
+            encontrados = sistema.buscar_por_autor(leer_texto("Texto a buscar en el autor: "))
         if len(encontrados) == 0:
             mostrar_resultado(False, "No se encontraron libros con ese texto.")
         else:

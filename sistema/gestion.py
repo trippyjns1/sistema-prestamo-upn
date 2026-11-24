@@ -42,6 +42,14 @@ class SistemaPrestamos:
                 encontrados.append(libro)
         return encontrados
 
+    def buscar_por_autor(self, texto):
+        # Igual que la busqueda por titulo, pero revisando el autor
+        encontrados = []
+        for libro in self.libros:
+            if libro.autor.lower().find(texto.lower()) != -1:
+                encontrados.append(libro)
+        return encontrados
+
     def buscar_prestamo_activo(self, codigo_estudiante, codigo_libro):
         for prestamo in self.prestamos_activos:
             if prestamo.codigo_estudiante == codigo_estudiante and prestamo.codigo_libro == codigo_libro:
