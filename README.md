@@ -42,7 +42,7 @@ sistema/
 | 01 Control de versiones y estructuras | Git/GitHub con ramas; `if/elif`, `while`, `for` en todo el sistema |
 | 02 Funciones y modularidad | Funciones con parámetros y retorno; 5 módulos |
 | 03 Arreglos | Listas de objetos, CRUD, Burbuja (`ordenar_por_titulo`) y Selección (`ordenar_por_codigo`) |
-| 04 Cadenas y arreglos paralelos | `split`, `replace`, `find`, `upper`, `title`, slicing; reporte de libros más prestados con 3 listas paralelas |
+| 04 Cadenas y arreglos paralelos | `split`, `replace`, `find`, `upper`, `title`, slicing; búsqueda por título y por autor; reporte de libros más prestados con 3 listas paralelas |
 | 05 Persistencia | Archivos `.txt` con datos separados por `;` |
 | 06 Programación modular y reutilización | Entidades / gestión / formulario; funciones de `utilidades.py` usadas en todo el menú |
 | 07 Recursividad | `contar_disponibles()` y `sumar_dias_prestados()` |
@@ -52,3 +52,9 @@ sistema/
 - Máximo **30 días** por préstamo (incluidas las extensiones).
 - Máximo **3 libros** prestados a la vez por estudiante.
 - No se puede eliminar un libro que está prestado.
+
+## Repositorio y ramas
+
+- `main`: versión estable del sistema.
+- `tema-04-busqueda-autor`: búsqueda de libros por autor (métodos de cadenas).
+- `docs-readme`: documentación del proyecto.
