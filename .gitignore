@@ -1,0 +1,6 @@
+# Archivos que genera Python al ejecutar
+__pycache__/
+*.pyc
+
+# Datos de prueba locales (cada uno genera los suyos)
+sistema/datos/
