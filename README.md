@@ -32,6 +32,7 @@ sistema/
 ├── gestion.py     # Clase SistemaPrestamos: reglas del negocio, CRUD, ordenamientos, reportes y recursividad
 ├── utilidades.py  # Funciones reutilizables para pedir y validar datos
 ├── archivos.py    # Guardar y leer archivos .txt
+├── medir_tiempos.py # Mide el tiempo de las operaciones con 100 a 5000 libros
 └── datos/         # libros.txt, estudiantes.txt, prestamos.txt, historial.txt (se crea sola)
 ```
 
@@ -58,3 +59,4 @@ sistema/
 - `main`: versión estable del sistema.
 - `tema-04-busqueda-autor`: búsqueda de libros por autor (métodos de cadenas).
 - `docs-readme`: documentación del proyecto.
+- `analisis-tiempos`: script para medir el rendimiento del sistema.
